@@ -14,7 +14,7 @@
     "build:ui5:pre": "cp packages/<%= reactappId %>/distUI5/<%= reactappId %>.umd.cjs packages/<%= application %>/webapp/ExtApp/<%= reactappId %>.js || copy packages\\<%= application %>\\distUI5\\<%= reactappId %>.umd.cjs packages\\<%= application %>\\webapp\\ExtApp\\<%= reactappId %>.js"
   },
 
-  "keywords": [],
+  "keywords": ["ui5", "react"],
   "author": "<%= author %>",
   "license": "ISC"
 }
