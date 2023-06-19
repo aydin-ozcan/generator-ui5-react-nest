@@ -1,0 +1,15 @@
+# Hidden Files
+_
+test/*/
+
+# Logs
+logs
+*.log
+pnpm-debug.log*
+npm-debug.log*
+
+
+# Dependency directories
+node_modules/
+
+.DS_Store

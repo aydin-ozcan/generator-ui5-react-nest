@@ -1,0 +1,18 @@
+<mvc:View
+	controllerName="<%= appId %>.controller.Main"
+	displayBlock="true"
+	xmlns:custom="<%= appId %>.ExtApp"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+ <VBox
+    justifyContent="Center" 
+    alignItems="Center" 
+    height="100%" >
+  	<VBox>
+    	<Title text="UI5"  titleStyle="H1" />
+      <Button
+        text="count is {/count}"  press=".onIncrement" />
+    </VBox>
+        <custom:ReactControl id="react" />
+    </VBox>
+</mvc:View>

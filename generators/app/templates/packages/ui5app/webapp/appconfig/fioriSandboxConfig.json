@@ -1,0 +1,84 @@
+{
+  "services": {
+    "LaunchPage": {
+      "adapter": {
+        "config": {
+          "catalogs": [
+            {
+              "id": "sample_catalog",
+              "title": "Sample Application Catalog",
+              "tiles": [
+                {
+                  "id": "app-id-0",
+                  "title": "",
+                  "size": "1x1",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "chipId": "catalogTile_00",
+                    "title": "<%= application %>",
+                    "subtitle": "<%= application %>",
+                    "info": "UI5 Nest",
+                    "icon": "sap-icon://decision",
+                    "targetURL": "#<%= application %>ui-display"
+                  }
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "id": "sample_group",
+              "isGroupLocked": false,
+              "isPreset": true,
+              "isVisible": true,
+              "title": "Sample Applications",
+              "tiles": [
+                {
+                  "id": "app-id-0",
+                  "title": "",
+                  "size": "1x1",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "chipId": "catalogTile_00",
+                    "title": "<%= application %>",
+                    "subtitle": "UI5 Nest",
+                    "info": "UI5 Nest for React ",
+                    "icon": "sap-icon://decision",
+                    "targetURL": "#<%= application %>ui-display"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "NavTargetResolution": {
+      "config": {
+        "enableClientSideTargetResolution": true
+      }
+    },
+    "ClientSideTargetResolution": {
+      "adapter": {
+        "config": {
+          "inbounds": {
+            "<%= application %>ui-display": {
+              "semanticObject": "<%= application %>ui",
+              "action": "display",
+              "title": "<%= application %> UI5 Nest",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "notallowed"
+              },
+              "resolutionResult": {
+                "applicationType": "URL",
+                "additionalInformation": "SAPUI5.Component=<%= appId %>",
+                "url": "./"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

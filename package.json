@@ -1,0 +1,33 @@
+{
+  "name": "generator-ui5-react-nest",
+  "version": "1.0.0",
+  "description": "Generator for nesting react app inside a UI5 control with tight Launchpad support",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd test && yo ../../generator-ui5-react-nest"
+  },
+  "keywords": [
+    "ui5",
+    "application",
+    "yeoman generator",
+    "react"
+  ],
+  "author": "Aydin Ozcan <aydin.ozcan@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aydin-ozcan/generator-ui5-react-nest.git"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "package-json": "^8.1.0",
+    "yeoman-generator": "^5.7.0",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.2",
+    "jest": "^29.3.1",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^6.3.0"
+  }
+}

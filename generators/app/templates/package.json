@@ -1,0 +1,20 @@
+{
+  "name": "ui5nest",
+  "version": "1.0.0",
+  "description": "Monorepo of UI5 Nest for React",
+ 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:ui5": "pnpm run build:react:ui5 && pnpm run build:ui5:pre && pnpm --filter <%= application %> start",
+    "build:ui5": "pnpm run build:react:ui5 && pnpm run build:ui5:pre && pnpm --filter <%= application %> build",
+    "build:ui5:opt": "pnpm run build:react:ui5 && pnpm run build:ui5:pre && pnpm --filter <%= application %> build:opt",
+    "start:react": "pnpm --filter <%= reactappId %> start",
+    "build:react": "pnpm --filter <%= reactappId %> build",
+    "build:react:ui5": "pnpm --filter <%= reactappId %> build:ui5",
+    "build:ui5:pre": "cp packages/<%= reactappId %>/distUI5/<%= reactappId %>.umd.cjs packages/<%= application %>/webapp/ExtApp/<%= reactappId %>.js || copy packages\\<%= application %>\\distUI5\\<%= reactappId %>.umd.cjs packages\\<%= application %>\\webapp\\ExtApp\\<%= reactappId %>.js"
+  },
+
+  "keywords": [],
+  "author": "<%= author %>",
+  "license": "ISC"
+}
