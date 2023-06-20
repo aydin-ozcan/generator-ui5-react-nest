@@ -27,3 +27,4 @@ As you will notice, the React application has 2 modes. The first one is standalo
 Although I usually prefer using TypeScript, I have opted for JavaScript in this case for the sake of simplicity and clarity. However, TypeScript can be easily integrated if desired.
 
 By using the `generator-ui-react-nest` and following the steps outlined in this blog post, you can achieve a smooth integration of React applications with SAP UI5, enabling a consistent and powerful user experience across your projects.
+
