@@ -13,6 +13,6 @@
       <Button
         text="count is {/count}"  press=".onIncrement" />
     </VBox>
-        <custom:ReactControl id="react" />
+        <custom:UI5Nest id="react" />
     </VBox>
 </mvc:View>
