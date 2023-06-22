@@ -4,9 +4,9 @@ const Generator = require("yeoman-generator");
 const yosay = require("yosay");
 const path = require("path");
 const semver = require("semver");
-
+const glob = require("glob");
 // ES modules imports (see initializing hook)
-let chalk, glob, packageJson;
+let chalk, packageJson;
 
 module.exports = class extends Generator {
 
@@ -21,7 +21,6 @@ module.exports = class extends Generator {
 
   async initializing() {
     chalk = (await import("chalk")).default;
-    glob = (await import("glob")).default;
     packageJson = (await import("package-json")).default;
   }
 
@@ -199,15 +198,15 @@ module.exports = class extends Generator {
   
   install() {
     this.config.set("setupCompleted", true);
-    this.spawnCommandSync(
-      "pnpm",
-      [
-        "install"
-      ],
-      {
-        cwd: this.destinationPath()
-      }
-    );
+    // this.spawnCommandSync(
+    //   "npm",
+    //   [
+    //     "install"
+    //   ],
+    //   {
+    //     cwd: this.destinationPath()
+    //   }
+    // );
   }
 
   end() {

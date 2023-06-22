@@ -11,9 +11,11 @@
     "start:react": "pnpm --filter <%= reactappId %> start",
     "build:react": "pnpm --filter <%= reactappId %> build",
     "build:react:ui5": "pnpm --filter <%= reactappId %> build:ui5",
-    "build:ui5:pre": "cp packages/<%= reactappId %>/distUI5/<%= reactappId %>.umd.cjs packages/<%= application %>/webapp/ExtApp/<%= reactappId %>.js || copy packages\\<%= application %>\\distUI5\\<%= reactappId %>.umd.cjs packages\\<%= application %>\\webapp\\ExtApp\\<%= reactappId %>.js"
+    "build:ui5:pre": "shx cp packages/<%= reactappId %>/distUI5/<%= reactappId %>.umd.cjs packages/<%= application %>/webapp/ExtApp/<%= reactappId %>.js || copy packages\\<%= application %>\\distUI5\\<%= reactappId %>.umd.cjs packages\\<%= application %>\\webapp\\ExtApp\\<%= reactappId %>.js"
   },
-
+  "devDependencies": {
+    "shx": "^0.3.4"
+  },
   "keywords": ["ui5", "react"],
   "author": "<%= author %>",
   "license": "ISC"

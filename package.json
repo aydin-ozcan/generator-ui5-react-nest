@@ -1,6 +1,6 @@
 {
   "name": "generator-ui5-react-nest",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "Generator for nesting react app inside a UI5 control with tight Launchpad support",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "chalk": "^5.1.2",
+    "glob": "^10.3.0",
     "package-json": "^8.1.0",
     "yeoman-generator": "^5.7.0",
     "yosay": "^2.0.2"
