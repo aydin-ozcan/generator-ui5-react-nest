@@ -39,7 +39,7 @@ Above Image taken from CF Workzone . Below is the code for this,
 
 </div>
 <div>You can deploy to HTML5 Repository like you do it with your UI5 application.
-UI5Nest control integration with Workzone or Fiori Launchpad (on-prem)  is tight. This means that your React application receives real-time updates for localization and theme changes when events occur.</div>
+UI5Nest control integration with Workzone or Fiori Launchpad (on-prem)  is seamless. This means that your React application receives real-time updates for localization and theme changes when events occur.</div>
 <div>You will receive initial values of the theme and locale in your React app.
 You will receive these updates again if they change , ensuring you don't miss any updates.
 <pre class="language-javascript"><code>function onThemeChanged (sTheme) {  
