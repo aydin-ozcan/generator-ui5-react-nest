@@ -10,14 +10,14 @@ In this blog post, we'll explore the blending of React application with UI5 by l
 </div>
 <div></div>
 <div><img class="aligncenter" src="https://blogs.sap.com/wp-content/uploads/2023/06/Screenshot-2023-06-19-at-10.13.26.png" alt="Workzone%20view" />
-Above Image taken from CF Workzone . Below Is the code for this,
+Above Image taken from CF Workzone . Below is the code for this,
 <pre class="language-markup"><code>&lt;mvc:View
 	controllerName="nest.controller.Main"
 	displayBlock="true"
 	xmlns:custom="nest.ExtApp"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"&gt;
- &lt;VBox
+  &lt;VBox
     justifyContent="Center" 
     alignItems="Center" 
     height="100%" &gt;
@@ -26,8 +26,8 @@ Above Image taken from CF Workzone . Below Is the code for this,
       &lt;Button
         text="count is {/count}"  press=".onIncrement" /&gt;
     &lt;/VBox&gt;
-        &lt;custom:UI5Nest id="react" /&gt;
-    &lt;/VBox&gt;
+    &lt;custom:UI5Nest id="react" /&gt;
+  &lt;/VBox&gt;
 &lt;/mvc:View&gt;​</code></pre>
 </div>
 &nbsp;
