@@ -1,7 +1,7 @@
 {
   "name": "generator-ui5-react-nest",
-  "version": "1.0.10",
-  "description": "Generator for nesting react app inside a UI5 control with tight Launchpad support",
+  "version": "1.0.11",
+  "description": "Generator for nesting react app inside a UI5 control with seamless Launchpad support",
   "main": "index.js",
   "scripts": {
     "test": "cd test && yo ../../generator-ui5-react-nest"
