@@ -14,9 +14,10 @@ function onLocalizationChanged (sLocal) {
 }
 
 export function loadReact(params) {
-  ReactDOM.createRoot( document.getElementById(params.ReactDivName) ).render( <App /> )
-  return  () => {
-    ReactDOM.unmountComponentAtNode(document.getElementById(params.ReactDivName) );
+  const root = ReactDOM.createRoot(document.getElementById(params.ReactDivName));
+  root.render(<App />);
+  return () => {
+    root.unmount();
   }
 }
 
